@@ -1,0 +1,21 @@
+﻿@model List<string>
+
+<div class="d-flex justify-content-center align-content-center">
+    <table class="table" width="500px">
+        <thead>
+            <tr>
+                <th>ALL WORDS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>@item.ToUpper()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
